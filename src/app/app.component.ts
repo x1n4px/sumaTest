@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sumaTest';
+  activeTab: string = 'formulario';
+
+  changeTab(tab: string): void {
+    this.activeTab = tab;
+  }
 }
